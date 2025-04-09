@@ -8,7 +8,7 @@ Secure Wazuh deployment automation for Docker with enhanced password management,
 
 This script performs a complete Wazuh installation with Docker:
 - Clones the official Wazuh Docker repository
-- Generates SSL certificates 
+- Generates SSL certificates
 - Replaces all default passwords with secure random passwords
 - Sets up the complete stack with security hardening
 - Displays all generated credentials for safekeeping
@@ -31,10 +31,12 @@ sudo bash -c "$(wget -qLO - https://github.com/TridentStack/wazuh-docker-secure/
 
 ## Requirements
 
-- Docker and Docker Compose installed
+- Docker with Docker Compose V2 installed (scripts use `docker compose`, not `docker-compose`)
 - Git installed
 - Sufficient permissions (sudo access)
 - Outbound internet access for downloading the Wazuh repository
+
+These scripts have been tested on Ubuntu 24.04 using the official Docker installation method from [https://docs.docker.com/engine/install/ubuntu/](https://docs.docker.com/engine/install/ubuntu/)
 
 ## Important Caution
 
