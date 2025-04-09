@@ -2,6 +2,8 @@
 
 Secure Wazuh deployment automation for Docker with enhanced password management, certificate generation, and security hardening. These scripts automate full setup and credential management, eliminating default passwords and implementing security best practices.
 
+> **Note:** These scripts are specifically designed for Wazuh single-node deployments, which we've found sufficient for small to medium environments. While they could be adapted for multi-node architectures, we have not tested them in such configurations. Single-node deployments offer a good balance of simplicity and performance for many use cases.
+
 ## Installation Scripts
 
 ### Wazuh Docker Full Setup
