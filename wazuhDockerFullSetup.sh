@@ -99,7 +99,7 @@ echo "Working directory: $(pwd)"
 # Make sure the directory exists with proper permissions before generation
 echo "Setting up certificate directory..."
 mkdir -p config/wazuh_indexer_ssl_certs
-chmod 777 config/wazuh_indexer_ssl_certs 2>/dev/null || true
+chmod 750 config/wazuh_indexer_ssl_certs 2>/dev/null || true
 
 # PHASE 1: Generate certificates
 echo "=== PHASE 1: Generating certificates ==="
